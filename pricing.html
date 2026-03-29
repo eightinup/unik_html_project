@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Тарифы — Nova Academy</title>
+  <meta name="description" content="Тарифы онлайн-школы Nova Academy." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">N</span>
+        <span>Nova Academy</span>
+      </a>
+      <button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false">☰</button>
+      <nav class="site-nav">
+        <a href="index.html">Главная</a>
+        <a href="courses.html">Курсы</a>
+        <a href="teachers.html">Преподаватели</a>
+        <a class="active" href="pricing.html">Тарифы</a>
+        <a href="register.html" class="btn btn-sm btn-primary">Регистрация</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero slim-hero">
+      <div class="container center-text">
+        <span class="badge">Прозрачные цены</span>
+        <h1>Тарифы обучения</h1>
+        <p>Выбери удобный формат: помесячная оплата или полный доступ за курс.</p>
+        <div class="billing-toggle">
+          <button class="billing-btn active" data-period="monthly">Помесячно</button>
+          <button class="billing-btn" data-period="full">За весь курс</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid grid-3 pricing-grid">
+        <article class="card price-card">
+          <span class="price-label">Start</span>
+          <h3>Самостоятельный</h3>
+          <div class="price" data-monthly="12 000 ₸" data-full="59 000 ₸">12 000 ₸</div>
+          <p>Для тех, кто хочет проходить материалы в собственном темпе.</p>
+          <ul class="feature-list">
+            <li>Доступ к урокам</li>
+            <li>Практические задания</li>
+            <li>Тесты после модулей</li>
+          </ul>
+          <a href="register.html" class="btn btn-secondary full-width">Выбрать</a>
+        </article>
+
+        <article class="card price-card featured">
+          <span class="price-label">Most Popular</span>
+          <h3>Mentor</h3>
+          <div class="price" data-monthly="24 000 ₸" data-full="109 000 ₸">24 000 ₸</div>
+          <p>Оптимальный пакет с проверкой заданий и обратной связью.</p>
+          <ul class="feature-list">
+            <li>Все из тарифа Start</li>
+            <li>Проверка домашних заданий</li>
+            <li>Чат с наставником</li>
+            <li>Разбор ошибок</li>
+          </ul>
+          <a href="register.html" class="btn btn-primary full-width">Выбрать</a>
+        </article>
+
+        <article class="card price-card">
+          <span class="price-label">Pro</span>
+          <h3>Career Plus</h3>
+          <div class="price" data-monthly="34 000 ₸" data-full="149 000 ₸">34 000 ₸</div>
+          <p>Полный пакет: наставник, проекты, карьерная поддержка и финальная защита.</p>
+          <ul class="feature-list">
+            <li>Все из тарифа Mentor</li>
+            <li>Карьерная консультация</li>
+            <li>Подготовка резюме</li>
+            <li>Финальный сертификат</li>
+          </ul>
+          <a href="register.html" class="btn btn-secondary full-width">Выбрать</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container faq-wrap">
+        <div class="section-head">
+          <span class="section-kicker">FAQ</span>
+          <h2>Частые вопросы</h2>
+        </div>
+        <div class="faq-list">
+          <details class="card faq-item">
+            <summary>Можно ли учиться с нуля?</summary>
+            <p>Да. У нас есть программы для начинающих и подробная поддержка на старте.</p>
+          </details>
+          <details class="card faq-item">
+            <summary>Есть ли сертификат?</summary>
+            <p>После успешного завершения программы студент получает сертификат школы.</p>
+          </details>
+          <details class="card faq-item">
+            <summary>Как проходит обучение?</summary>
+            <p>Материалы доступны онлайн, часть программ включает живые занятия и проверку работ.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="logo footer-logo">
+          <span class="logo-mark">N</span>
+          <span>Nova Academy</span>
+        </a>
+        <p>Онлайн-школа по современным цифровым профессиям.</p>
+      </div>
+      <div>
+        <h4>Навигация</h4>
+        <a href="courses.html">Курсы</a>
+        <a href="teachers.html">Преподаватели</a>
+        <a href="pricing.html">Тарифы</a>
+        <a href="register.html">Регистрация</a>
+      </div>
+      <div>
+        <h4>Контакты</h4>
+        <a href="mailto:info@novaacademy.edu">info@novaacademy.edu</a>
+        <a href="tel:+77001234567">+7 (700) 123-45-67</a>
+        <span>Алматы, Казахстан</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

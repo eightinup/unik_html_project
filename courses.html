@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Курсы — Nova Academy</title>
+  <meta name="description" content="Каталог курсов онлайн-школы Nova Academy." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">N</span>
+        <span>Nova Academy</span>
+      </a>
+      <button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false">☰</button>
+      <nav class="site-nav">
+        <a href="index.html">Главная</a>
+        <a class="active" href="courses.html">Курсы</a>
+        <a href="teachers.html">Преподаватели</a>
+        <a href="pricing.html">Тарифы</a>
+        <a href="register.html" class="btn btn-sm btn-primary">Регистрация</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero slim-hero">
+      <div class="container">
+        <span class="badge">Каталог программ</span>
+        <h1>Курсы Nova Academy</h1>
+        <p>Выбери направление и найди программу под свой уровень подготовки.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="filters card">
+          <div class="filter-group">
+            <label for="categoryFilter">Направление</label>
+            <select id="categoryFilter">
+              <option value="all">Все направления</option>
+              <option value="development">Разработка</option>
+              <option value="design">Дизайн</option>
+              <option value="analytics">Аналитика</option>
+              <option value="marketing">Маркетинг</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="levelFilter">Уровень</label>
+            <select id="levelFilter">
+              <option value="all">Любой уровень</option>
+              <option value="beginner">Начальный</option>
+              <option value="intermediate">Средний</option>
+              <option value="advanced">Продвинутый</option>
+            </select>
+          </div>
+          <div class="filter-group search-group">
+            <label for="courseSearch">Поиск</label>
+            <input type="text" id="courseSearch" placeholder="Например, JavaScript" />
+          </div>
+        </div>
+
+        <div class="grid grid-3" id="courseGrid">
+          <article class="card course-card filter-item" data-category="development" data-level="beginner" data-title="frontend developer html css javascript">
+            <span class="course-tag">Разработка</span>
+            <h3>Frontend Developer</h3>
+            <p>HTML, CSS, JavaScript, сетки, адаптивная верстка и основы UI.</p>
+            <ul class="feature-list compact">
+              <li>12 недель</li>
+              <li>2 проекта</li>
+              <li>Начальный уровень</li>
+            </ul>
+          </article>
+
+          <article class="card course-card filter-item" data-category="development" data-level="intermediate" data-title="javascript advanced frontend logic dom api">
+            <span class="course-tag">Разработка</span>
+            <h3>JavaScript Advanced</h3>
+            <p>DOM, события, асинхронность, API, модули и интерактивные интерфейсы.</p>
+            <ul class="feature-list compact">
+              <li>10 недель</li>
+              <li>3 проекта</li>
+              <li>Средний уровень</li>
+            </ul>
+          </article>
+
+          <article class="card course-card filter-item" data-category="design" data-level="beginner" data-title="ui ux design figma prototypes">
+            <span class="course-tag">Дизайн</span>
+            <h3>UI/UX Design Start</h3>
+            <p>Исследования, user flow, wireframes, Figma и создание интерфейсов.</p>
+            <ul class="feature-list compact">
+              <li>14 недель</li>
+              <li>2 кейса</li>
+              <li>Начальный уровень</li>
+            </ul>
+          </article>
+
+          <article class="card course-card filter-item" data-category="analytics" data-level="beginner" data-title="data analytics excel sql dashboards">
+            <span class="course-tag">Аналитика</span>
+            <h3>Data Analytics Basics</h3>
+            <p>Работа с данными, SQL, Excel, метрики, дашборды и визуализация.</p>
+            <ul class="feature-list compact">
+              <li>10 недель</li>
+              <li>1 итоговый дашборд</li>
+              <li>Начальный уровень</li>
+            </ul>
+          </article>
+
+          <article class="card course-card filter-item" data-category="marketing" data-level="beginner" data-title="digital marketing smm ads branding">
+            <span class="course-tag">Маркетинг</span>
+            <h3>Digital Marketing</h3>
+            <p>SMM, контент, реклама, стратегия продвижения и анализ рекламных кампаний.</p>
+            <ul class="feature-list compact">
+              <li>8 недель</li>
+              <li>Практические задания</li>
+              <li>Начальный уровень</li>
+            </ul>
+          </article>
+
+          <article class="card course-card filter-item" data-category="analytics" data-level="advanced" data-title="power bi business analytics reports advanced">
+            <span class="course-tag">Аналитика</span>
+            <h3>Business Analytics Pro</h3>
+            <p>Продвинутая отчетность, Power BI, KPI, аналитика бизнеса и презентация выводов.</p>
+            <ul class="feature-list compact">
+              <li>12 недель</li>
+              <li>2 бизнес-кейса</li>
+              <li>Продвинутый уровень</li>
+            </ul>
+          </article>
+        </div>
+        <p class="empty-state hidden" id="emptyCourses">По заданным фильтрам курсы не найдены.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="logo footer-logo">
+          <span class="logo-mark">N</span>
+          <span>Nova Academy</span>
+        </a>
+        <p>Онлайн-школа по современным цифровым профессиям.</p>
+      </div>
+      <div>
+        <h4>Навигация</h4>
+        <a href="courses.html">Курсы</a>
+        <a href="teachers.html">Преподаватели</a>
+        <a href="pricing.html">Тарифы</a>
+        <a href="register.html">Регистрация</a>
+      </div>
+      <div>
+        <h4>Контакты</h4>
+        <a href="mailto:info@novaacademy.edu">info@novaacademy.edu</a>
+        <a href="tel:+77001234567">+7 (700) 123-45-67</a>
+        <span>Алматы, Казахстан</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
